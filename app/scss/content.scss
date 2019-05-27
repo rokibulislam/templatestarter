@@ -1,0 +1,15 @@
+@media screen and (min-width:640px) {
+	.flex-container {
+		display: flex
+	}
+}
+
+.content {
+	flex: 1;
+	background: #129a22
+}
+
+.sidebar {
+	flex: 0 1 300px;
+	background: #673ab7
+}
