@@ -1,56 +1,83 @@
 .blog {
-  background: #f9f9f9;
-  color: #313131;
-  flex-wrap: wrap;
-  flex-direction: row; }
+	background: #f9f9f9;
+	color: #313131;
+	flex-wrap: wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-direction: row;
+}
 
 .blog-item {
-  flex: 1 1 23%; }
+	-webkit-box-flex: 1;
+	        flex: 1 1 23%;
+}
 
 @media screen and (min-width: 640px) {
-  .blog {
-    display: flex; } }
+	.blog {
+		display: -webkit-box;
+		display: flex;
+	}
+}
+
+.blog-test {
+	-webkit-box-flex: 1;
+	        flex: 1;
+}
 
 * {
-  margin: 0;
-  padding: 0; }
+	margin: 0;
+	padding: 0;
+}
 
 html {
-  font-size: 100%; }
+	font-size: 100%;
+}
 
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  color: #fff; }
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	color: #fff;
+}
 
 aside,
 footer,
 header,
 main,
 section {
-  display: block;
-  margin: 0;
-  padding: 1.25rem;
-  color: #fff; }
+	display: block;
+	margin: 0;
+	padding: 1.25rem;
+	color: #fff;
+}
 
 @media screen and (min-width: 640px) {
-  .flex-container {
-    display: flex; } }
+	.flex-container {
+		display: -webkit-box;
+		display: flex;
+	}
+}
 
 .content {
-  flex: 1;
-  background: #129a22; }
+	-webkit-box-flex: 1;
+	        flex: 1;
+	background: #129a22;
+}
 
 .sidebar {
-  flex: 0 1 300px;
-  background: #673ab7; }
+	-webkit-box-flex: 0;
+	        flex: 0 1 300px;
+	background: #673ab7;
+}
 
 .footer {
-  background: #616161; }
+	background: #616161;
+}
 
 .header {
-  background: #03a9f4; }
+	background: #03a9f4;
+}
 
 .hero {
-  background: #d22b1f; }
+	background: #d22b1f;
+}
